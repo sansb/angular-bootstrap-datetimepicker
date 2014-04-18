@@ -311,7 +311,7 @@ angular.module('ui.bootstrap.datetimepicker', [])
               scope.onSetTime(newDate, scope.ngModel);
             }
             scope.ngModel = newDate;
-            return dataFactory[scope.data.currentView](unixDate);
+            return dataFactory[configuration.startView](unixDate);
           }
         };
 
